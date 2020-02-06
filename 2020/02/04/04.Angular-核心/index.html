@@ -90,26 +90,26 @@
 
 
 
-  <meta name="description" content="目录结构图：  package.json中的scripts中包含了一些执行命令，如ng: npm run ng可以这样执行 12345678&amp;quot;scripts&amp;quot;: &amp;#123;   &amp;quot;ng&amp;quot;: &amp;quot;ng&amp;quot;, 运行查看angular脚手架工具使用帮助   &amp;quot;start&amp;quot;: &amp;quot;ng serve&amp;quot;, 运行开发">
+  <meta name="description" content="Angular的核心特性（概念模型） 组件：一切都围绕组件展开的 意义：  分治，把各种逻辑分装在组件内部，避免混在一起 复用，不仅可以在项目内部复用，也可以跨项目复用  组件的样子： 123456789101112app.component.ts:import &amp;#123; Component &amp;#125; from &amp;apos;@angular/core&amp;apos;;@Component(&amp;#">
 <meta property="og:type" content="article">
-<meta property="og:title" content="03.Angular_项目目录结构">
-<meta property="og:url" content="http://yoursite.com/2020/02/04/03.Angular-项目目录结构/index.html">
+<meta property="og:title" content="04.Angular_核心">
+<meta property="og:url" content="http://yoursite.com/2020/02/04/04.Angular-核心/index.html">
 <meta property="og:site_name" content="studyingHouse">
-<meta property="og:description" content="目录结构图：  package.json中的scripts中包含了一些执行命令，如ng: npm run ng可以这样执行 12345678&amp;quot;scripts&amp;quot;: &amp;#123;   &amp;quot;ng&amp;quot;: &amp;quot;ng&amp;quot;, 运行查看angular脚手架工具使用帮助   &amp;quot;start&amp;quot;: &amp;quot;ng serve&amp;quot;, 运行开发">
+<meta property="og:description" content="Angular的核心特性（概念模型） 组件：一切都围绕组件展开的 意义：  分治，把各种逻辑分装在组件内部，避免混在一起 复用，不仅可以在项目内部复用，也可以跨项目复用  组件的样子： 123456789101112app.component.ts:import &amp;#123; Component &amp;#125; from &amp;apos;@angular/core&amp;apos;;@Component(&amp;#">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="c:/Users/赵雪玲/AppData/Local/Temp/1580803958896.png">
-<meta property="og:updated_time" content="2020-02-04T09:33:58.034Z">
+<meta property="og:image" content="c:/Users/赵雪玲/AppData/Local/Temp/1580809150049.png">
+<meta property="og:updated_time" content="2020-02-05T03:23:01.666Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="03.Angular_项目目录结构">
-<meta name="twitter:description" content="目录结构图：  package.json中的scripts中包含了一些执行命令，如ng: npm run ng可以这样执行 12345678&amp;quot;scripts&amp;quot;: &amp;#123;   &amp;quot;ng&amp;quot;: &amp;quot;ng&amp;quot;, 运行查看angular脚手架工具使用帮助   &amp;quot;start&amp;quot;: &amp;quot;ng serve&amp;quot;, 运行开发">
-<meta name="twitter:image" content="c:/Users/赵雪玲/AppData/Local/Temp/1580803958896.png">
+<meta name="twitter:title" content="04.Angular_核心">
+<meta name="twitter:description" content="Angular的核心特性（概念模型） 组件：一切都围绕组件展开的 意义：  分治，把各种逻辑分装在组件内部，避免混在一起 复用，不仅可以在项目内部复用，也可以跨项目复用  组件的样子： 123456789101112app.component.ts:import &amp;#123; Component &amp;#125; from &amp;apos;@angular/core&amp;apos;;@Component(&amp;#">
+<meta name="twitter:image" content="c:/Users/赵雪玲/AppData/Local/Temp/1580809150049.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2020/02/04/03.Angular-项目目录结构/">
+  <link rel="canonical" href="http://yoursite.com/2020/02/04/04.Angular-核心/">
 
 
 
@@ -119,7 +119,7 @@
   };
 </script>
 
-  <title>03.Angular_项目目录结构 | studyingHouse</title>
+  <title>04.Angular_核心 | studyingHouse</title>
   
 
 
@@ -305,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/03.Angular-项目目录结构/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/04.Angular-核心/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ling">
@@ -322,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">03.Angular_项目目录结构
+          <h1 class="post-title" itemprop="name headline">04.Angular_核心
 
               
             
@@ -348,12 +348,24 @@
                 
               
 
-              <time title="创建时间：2020-02-04 17:32:05 / 修改时间：17:33:58" itemprop="dateCreated datePublished" datetime="2020-02-04T17:32:05+08:00">2020-02-04</time>
+              <time title="创建时间：2020-02-04 17:35:20" itemprop="dateCreated datePublished" datetime="2020-02-04T17:35:20+08:00">2020-02-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-02-05 11:23:01" itemprop="dateModified" datetime="2020-02-05T11:23:01+08:00">2020-02-05</time>
               
             
           </span>
@@ -412,15 +424,50 @@
       
 
       
-        <p>目录结构图：</p>
-<p><img src="C:\Users\赵雪玲\AppData\Local\Temp\1580803958896.png" alt="58080395889"></p>
-<p>package.json中的scripts中包含了一些执行命令，如ng: npm run ng可以这样执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&quot;scripts&quot;: &#123;</span><br><span class="line">   &quot;ng&quot;: &quot;ng&quot;, 运行查看angular脚手架工具使用帮助</span><br><span class="line">   &quot;start&quot;: &quot;ng serve&quot;, 运行开发模式</span><br><span class="line">   &quot;build&quot;: &quot;ng build&quot;, 运行项目打包构建，用于发布到生产环境</span><br><span class="line">   &quot;test&quot;: &quot;ng test&quot;, 运行karma单元测试</span><br><span class="line">   &quot;lint&quot;: &quot;ng lint&quot;, 运行ts代码校验</span><br><span class="line">   &quot;e2e&quot;: &quot;ng e2e&quot; 运行proteactor端到端的测试</span><br><span class="line"> &#125;,</span><br></pre></td></tr></table></figure>
-<p>npm run start == ng serve</p>
-<p>执行这些命令时这个程序都做了哪些事情？？</p>
-<p>首先会找到angular-cli.json中，它相当于webpack打包配置文件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&quot;tongxunlu&quot;: &#123;</span><br><span class="line">      &quot;root&quot;: &quot;&quot;,</span><br><span class="line">      &quot;sourceRoot&quot;: &quot;src&quot;, 根目录</span><br><span class="line">      &quot;projectType&quot;: &quot;application&quot;,</span><br><span class="line">      &quot;prefix&quot;: &quot;app&quot;,</span><br><span class="line">      &quot;schematics&quot;: &#123;&#125;,</span><br><span class="line">      &quot;architect&quot;: &#123;</span><br><span class="line">        &quot;build&quot;: &#123;</span><br><span class="line">          &quot;builder&quot;: &quot;@angular-devkit/build-angular:browser&quot;,</span><br><span class="line">          &quot;options&quot;: &#123;</span><br><span class="line">            &quot;outputPath&quot;: &quot;dist/tongxunlu&quot;, 打包编译结果目录</span><br><span class="line">            &quot;index&quot;: &quot;src/index.html&quot;, 单页面</span><br><span class="line">            &quot;main&quot;: &quot;src/main.ts&quot;, 模块启动入口</span><br><span class="line">            &quot;polyfills&quot;: &quot;src/polyfills.ts&quot;,</span><br><span class="line">            &quot;tsConfig&quot;: &quot;src/tsconfig.app.json&quot;,</span><br><span class="line">            &quot;assets&quot;: [  存放静态资源目录</span><br><span class="line">              &quot;src/favicon.ico&quot;,</span><br><span class="line">              &quot;src/assets&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;styles&quot;: [ 全局样式文件</span><br><span class="line">              &quot;src/styles.css&quot;</span><br><span class="line">            ],</span><br><span class="line">            &quot;scripts&quot;: [],</span><br><span class="line">            &quot;es5BrowserSupport&quot;: true</span><br><span class="line">          &#125;,</span><br></pre></td></tr></table></figure>
-<p>module模块的作用是将组件整合起来</p>
+        <h1 id="Angular的核心特性（概念模型）"><a href="#Angular的核心特性（概念模型）" class="headerlink" title="Angular的核心特性（概念模型）"></a>Angular的核心特性（概念模型）</h1><p><img src="C:\Users\赵雪玲\AppData\Local\Temp\1580809150049.png" alt="58080915004"></p>
+<h2 id="组件："><a href="#组件：" class="headerlink" title="组件："></a>组件：</h2><p>一切都围绕组件展开的</p>
+<p>意义：</p>
+<ul>
+<li>分治，把各种逻辑分装在组件内部，避免混在一起</li>
+<li>复用，不仅可以在项目内部复用，也可以跨项目复用</li>
+</ul>
+<p>组件的样子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">app.component.ts:</span><br><span class="line"></span><br><span class="line">import &#123; Component &#125; from &apos;@angular/core&apos;;</span><br><span class="line"></span><br><span class="line">@Component(&#123;</span><br><span class="line">  selector: &apos;app-root&apos;, 定义组件渲染的标签名称</span><br><span class="line">  templateUrl: &apos;./app.component.html&apos;, 指定组件的模板文件</span><br><span class="line">  styleUrls: [&apos;./app.component.css&apos;] 数组，用来存放组件相关的样式文件</span><br><span class="line"> &#125;)</span><br><span class="line">export class AppComponent &#123;</span><br><span class="line">  title = &apos;tongxunlu&apos;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Angular中组件就是一个类（构造函数的另一种写法）</p>
+<p>@component 组件的装饰器 </p>
+<p>类对应的{}中写组件相关的内容数据</p>
+<p>app.component.html—写html代码</p>
+<p>app.component.css—写css样式</p>
+<p>app.component.ts—写业务逻辑</p>
+<p>app.component.spec.ts—写测试相关的代码（暂时不用管）</p>
+<h3 id="创建组件的方式"><a href="#创建组件的方式" class="headerlink" title="创建组件的方式"></a>创建组件的方式</h3><p>在终端中使用命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng generate component index //创建名为index的组件</span><br></pre></td></tr></table></figure>
+<p>该命令会自动创建以上四个文件，且会自动更新到app.module.ts中</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="模块："><a href="#模块：" class="headerlink" title="模块："></a>模块：</h3><p>app.module.ts：</p>
+<p>declarations:[]  //里面申明组装该模块所需要的资源（组件，指令和服务）</p>
+<p>imports:[]  //该模块所依赖的模块</p>
+<p>providers:[] </p>
+<p>bootstrap:[]  //指定启动的根组件，以哪个模块为入口来启动  一般为AppComponent</p>
+<h3 id="模板（template）"><a href="#模板（template）" class="headerlink" title="模板（template）"></a>模板（template）</h3><p>app.component.html</p>
+<p>数据绑定 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;  &#125;&#125; //胡子表达式</span><br></pre></td></tr></table></figure>
+<p>  mvvm思想</p>
+<p>属性绑定 [属性名]</p>
+<p>双向数据绑定  [(ngModel)]</p>
+<p>条件渲染</p>
+<p>列表渲染</p>
+<p>指令。。。</p>
+<h3 id="元数据（Metadata）"><a href="#元数据（Metadata）" class="headerlink" title="元数据（Metadata）"></a>元数据（Metadata）</h3><p>描述组件的信息</p>
+<h3 id="数据绑定"><a href="#数据绑定" class="headerlink" title="数据绑定"></a>数据绑定</h3><p>双向数据绑定</p>
+<h3 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h3><p>ngif   ngfor …</p>
+<h3 id="服务（angular独特的）"><a href="#服务（angular独特的）" class="headerlink" title="服务（angular独特的）"></a>服务（angular独特的）</h3><p>在Angular中，服务代表单一类，对某个特定功能的的封装，典型的就是http服务，当和服务端交互时请求数据。</p>
+<p>如：</p>
+<ul>
+<li>日志服务</li>
+<li>和服务端接口交互的服务</li>
+</ul>
+<p>组件类应精简，组建本身不<strong>从服务器获取数据，不进行验证输入，也不直接往控制台写日志</strong>，这几个都可以写在服务中，组建的任务就是提供用户体验，介于视图和应用逻辑之间</p>
+<h3 id="依赖注入（dependency-injection）"><a href="#依赖注入（dependency-injection）" class="headerlink" title="依赖注入（dependency injection）"></a>依赖注入（dependency injection）</h3><p>依赖注入：是提供类的新实例的一种方式，还负责处理好类所需的全部依赖，大多数依赖都是<strong>服务</strong></p>
 
       
     </div>
@@ -451,8 +498,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2020/02/03/02.Angular-脚手架/" rel="next" title="02.Angular_脚手架">
-                <i class="fa fa-chevron-left"></i> 02.Angular_脚手架
+              <a href="/2020/02/04/03.Angular-项目目录结构/" rel="next" title="03.Angular_项目目录结构">
+                <i class="fa fa-chevron-left"></i> 03.Angular_项目目录结构
               </a>
             
           </div>
@@ -461,8 +508,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/02/04/04.Angular-核心/" rel="prev" title="04.Angular_核心">
-                04.Angular_核心 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/02/05/TypeScript/" rel="prev" title="01.TypeScript">
+                01.TypeScript <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -508,8 +555,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -620,6 +676,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Angular的核心特性（概念模型）"><span class="nav-number">1.</span> <span class="nav-text">Angular的核心特性（概念模型）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#组件："><span class="nav-number">1.1.</span> <span class="nav-text">组件：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建组件的方式"><span class="nav-number">1.1.1.</span> <span class="nav-text">创建组件的方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.2.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#模块："><span class="nav-number">1.2.1.</span> <span class="nav-text">模块：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板（template）"><span class="nav-number">1.2.2.</span> <span class="nav-text">模板（template）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#元数据（Metadata）"><span class="nav-number">1.2.3.</span> <span class="nav-text">元数据（Metadata）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据绑定"><span class="nav-number">1.2.4.</span> <span class="nav-text">数据绑定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">1.2.5.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#服务（angular独特的）"><span class="nav-number">1.2.6.</span> <span class="nav-text">服务（angular独特的）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖注入（dependency-injection）"><span class="nav-number">1.2.7.</span> <span class="nav-text">依赖注入（dependency injection）</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
